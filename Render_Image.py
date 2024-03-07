@@ -244,12 +244,12 @@ def change_hdri_image(image_path):
         # Connect the Background node to the "World Output" node
         node_tree.links.new(bg_node.outputs['Background'], node_tree.nodes['World Output'].inputs['Surface'])
 
-        # Add three area lights
-        bpy.ops.object.light_add(type='AREA', location=(-1.91053, -0.422077, 1.7078))
-        light1 = bpy.context.object
-        light1.scale = (1.649, 1.34947, 1.2)
-        light1.rotation_euler = (math.radians(0), math.radians(-90), math.radians(0))
-        light1.data.energy = 50
+        # Add Window area lights
+        # bpy.ops.object.light_add(type='AREA', location=(-1.91053, -0.422077, 1.7078))
+        # light1 = bpy.context.object
+        # light1.scale = (1.649, 1.34947, 1.2)
+        # light1.rotation_euler = (math.radians(0), math.radians(-90), math.radians(0))
+        # light1.data.energy = 50
 
         # Set the location and scale of the cube
         cube_location = (0.078756, -0.433157, 1.5)  # (X, Y, Z) coordinates
